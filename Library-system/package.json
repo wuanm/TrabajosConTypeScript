@@ -1,0 +1,21 @@
+{
+  "name": "library-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:w": "tsc -w",
+    "dev": "nodemon dist/app/app.js",
+    "start": "node dist/app/app.js",
+    "start:web": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.1.11",
+    "typescript": "^5.9.3"
+  }
+}

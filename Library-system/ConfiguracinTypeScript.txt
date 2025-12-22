@@ -1,0 +1,36 @@
+npm init -y
+npm install typescript --save-dev
+npx tsc --init
+--tsconfig:
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"]
+}
+-----packege.json
+"scripts": {
+  "build:w": "tsc -w",
+  "start": "node dist/app/app.js"
+}
+
+-- ponemos la terminal a la escucha
+npm run build:w
+
+---ejecutnado un archivo
+node dist/app/app.ts
+
+---------nodemon automatiza la ejecucuion
+npm install --save-dev nodemon
+--- acomodamos el script para usar nodemon
+"scripts": {
+  "build:w": "tsc -w",
+  "dev": "nodemon dist/app/app.js",
+  "start": "node dist/app/app.js"

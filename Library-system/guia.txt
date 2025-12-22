@@ -1,0 +1,7 @@
+Modelos: Define la forma de tus datos (interface).
+
+Servicios: Crea clases separadas para cada entidad (Coches, Clientes, etc.).
+
+Inyección: Pasa un servicio al constructor de otro si necesitan hablar entre ellos.
+
+Lógica de Arrays: Usa find para buscar, filter para borrar/buscar varios, y reduce para estadísticas.
