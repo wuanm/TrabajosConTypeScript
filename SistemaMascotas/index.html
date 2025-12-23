@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Veterinaria TS</title>
+    <style>
+        body { font-family: sans-serif; display: flex; gap: 20px; padding: 20px; }
+        .form-container { width: 300px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        .display-container { flex-grow: 1; border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h3>1. Registrar Dueño</h3>
+        <input type="number" id="duenoId" placeholder="ID Dueño">
+        <input type="text" id="duenoNombre" placeholder="Nombre Dueño">
+        <button id="btnRegistrarDueno">Registrar Dueño</button>
+
+        <hr>
+
+        <h3>2. Registrar Mascota</h3>
+        <input type="number" id="mascotaId" placeholder="ID Mascota">
+        <input type="text" id="mascotaNombre" placeholder="Nombre Mascota">
+        <select id="mascotaEspecie">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="ave">Ave</option>
+            <option value="otro">Otro</option>
+        </select>
+        <input type="text" id="mascotaRaza" placeholder="Raza">
+        <input type="number" id="vincularDuenoId" placeholder="ID del Dueño">
+        <button id="btnRegistrarMascota">Registrar Mascota</button>
+    </div>
+
+    <div class="display-container">
+        <h3>Lista de Clientes y sus Mascotas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dueño</th>
+                    <th>Mascotas (IDs)</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuerpo">
+                </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="./dist/app/main.js"></script>
+</body>
+</html>

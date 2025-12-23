@@ -22,7 +22,7 @@ npx tsc --init
 }
 
 -- ponemos la terminal a la escucha
-npm run build:w
+ npm run build:w
 
 ---ejecutnado un archivo
 node dist/app/app.ts
@@ -34,3 +34,7 @@ npm install --save-dev nodemon
   "build:w": "tsc -w",
   "dev": "nodemon dist/app/app.js",
   "start": "node dist/app/app.js"
+  
+  
+  _------servidor
+  npm install --save-dev lite-server
