@@ -13,11 +13,11 @@ export class VeterinariaService{
 
     constructor(){}
 
-    private buscarMascota(id:number): Mascota | undefined{
+    buscarMascota(id:number): Mascota | undefined{
         return this.mascotas.find(mascota => mascota.id === id)
     }
 
-    private buscarDueno(id: number): Dueno |undefined{
+    buscarDueno(id: number): Dueno |undefined{
         return this.duenos.find(dueno => dueno.id === id)
     
     }

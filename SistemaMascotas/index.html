@@ -2,15 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/app/css/estilos.css">
     <title>Veterinaria TS</title>
-    <style>
-        body { font-family: sans-serif; display: flex; gap: 20px; padding: 20px; }
-        .form-container { width: 300px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
-        .display-container { flex-grow: 1; border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f4f4f4; }
-    </style>
+
 </head>
 <body>
 
@@ -48,6 +43,28 @@
             <tbody id="tablaCuerpo">
                 </tbody>
         </table>
+    </div>
+
+    <div class="contenedor-buscar-mascota">
+        <h2>Buscar Mascota</h2>
+                <form >
+                    <input type="number" name="" id="idBuscarMascota" placeholder="ID de la mascota" min="001"  required>
+                    <input type="submit" value="Buscar" id="buscar">
+                </form>
+    </div>
+
+    <div class="contenedor-mascota">
+        <h2 id="tituloMascota">nombre</h2> 
+    <div class="contenedor-elementos">
+        <div class="contenedor-imagen" id="contenedor-imagen">imagen</div>
+        <div class="contenedor-descripcion" id="contenedor-descripcion">
+            </div>
+    </div>
+    </div>
+
+
+
+
     </div>
 
     <script type="module" src="./dist/app/main.js"></script>
