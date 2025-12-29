@@ -1,0 +1,43 @@
+
+.contenedor-mascota {
+    border: 5px solid #ccc;
+    width: 100%;
+    height: auto;
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+#tituloMascota{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    margin: 10px;
+    font-weight: 1000;
+    padding: 5px;
+
+}
+
+.contenedor-elementos{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+.contenedor-imagen{
+    border: 5px solid #ccc;
+    flex: 0 1 30%;
+    min-width: 220px;
+    margin: 10px;
+     justify-content: center;
+    align-items: center;;
+    
+    
+}
+.contenedor-descripcion{
+    border: 5px solid #ccc;
+    margin: 10%;
+    flex: 1 2;
+    justify-content: center;
+    align-items: center;;
+}

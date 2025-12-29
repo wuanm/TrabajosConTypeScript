@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/app/css/imagenMascota.css">
     <link rel="stylesheet" href="./dist/app/css/estilos.css">
+    <link rel="stylesheet" href="./src/app/components/header/header.css">
+    <link rel="stylesheet" href="./src/app/components/header/hamburguesa.css">
     <title>Veterinaria TS</title>
 
 </head>
 <body>
+
+    <header class="header" id="header">
+
+
+    </header>
 
     <div class="form-container">
         <h3>1. Registrar Dueño</h3>
@@ -45,7 +53,7 @@
         </table>
     </div>
 
-    <div class="contenedor-buscar-mascota">
+    <div class="contenedor-buscar-mascota" id="buscar">
         <h2>Buscar Mascota</h2>
                 <form >
                     <input type="number" name="" id="idBuscarMascota" placeholder="ID de la mascota" min="001"  required>
@@ -58,6 +66,9 @@
     <div class="contenedor-elementos">
         <div class="contenedor-imagen" id="contenedor-imagen">imagen</div>
         <div class="contenedor-descripcion" id="contenedor-descripcion">
+            <p>id</p>
+            <p>especie</p>
+            <p>raza
             </div>
     </div>
     </div>
@@ -68,5 +79,6 @@
     </div>
 
     <script type="module" src="./dist/app/main.js"></script>
+    <script type="module" src="./dist/app/components/header/header.js"></script>
 </body>
 </html>

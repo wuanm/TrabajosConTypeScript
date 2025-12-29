@@ -89,7 +89,7 @@ buscar.addEventListener('click', (e) => {
         // 1. Lógica para la imagen (asegúrate que la carpeta sea ./assets/)
         const rutaImgen = `./dist/app/assets/${mascota.especie.toLowerCase()}.png`;
         // 2. Insertamos la imagen físicamente en el DOM
-        contenedorImagen.innerHTML = `<img src="${rutaImgen}" alt="${mascota.nombre}" style="width: 100%; max-width: 200px;">`;
+        contenedorImagen.innerHTML = `<img src="${rutaImgen}" alt="${mascota.nombre}" style="width: 100%; ">`;
         console.log(`Ruta de la imagen: ${rutaImgen}`);
         NombreMascota.textContent = mascota.nombre;
         // 3. Corregido el error de la comilla en "card"

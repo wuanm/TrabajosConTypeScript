@@ -1,0 +1,36 @@
+.hamburguer{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 30px;
+    font-size: 2rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px){
+    .contenedor-nav{
+        display: none;
+    
+    }
+    .hamburguer{
+        display: block;
+    
+    }
+    .contenedor-nav.active{
+        display: flex !important; /* importante activa o desactiva*/
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100vh;;
+        justify-content:flex-start;
+       
+    }
+}
